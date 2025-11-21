@@ -16,7 +16,7 @@
   <NavHamburger />
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
-    <NavLi>About Us</NavLi>
+    <NavLi>About Me</NavLi>
     <NavLi>Warranty</NavLi>
     <NavLi>Location</NavLi>
     <NavLi>Contact Us</NavLi>
