@@ -7,7 +7,7 @@
   ];
 
   const socialLinks = [
-    { icon: "📸", href: "https://www.instagram.com/joinseekrs/" }, // Instagram placeholder
+    { icon: "📸", href: "https://www.instagram.com/rydalwheels/" }, // Instagram placeholder
   ];
 </script>
 
