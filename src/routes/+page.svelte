@@ -8,6 +8,7 @@
     import HK16OMC from "$lib/assets/HK16OMC.jpg"
 	import Warranty from "$lib/components/Warranty.svelte";
 	import CarInfo from "$lib/components/CarInfo.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
     // Array of cars
     const cars = [
@@ -90,3 +91,5 @@
 </section>
 
 <CarInfo/>
+
+<Footer/>
