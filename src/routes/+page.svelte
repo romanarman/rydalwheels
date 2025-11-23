@@ -5,15 +5,12 @@
 
     import autotrader from "$lib/assets/autotrader.svg"
 
-    import HK16OMC from "$lib/assets/HK16OMC.jpg"
+    import awaiting from '$lib/assets/cars/ImagesAwaiting.jpg';
 	import Warranty from "$lib/components/Warranty.svelte";
 	import CarInfo from "$lib/components/CarInfo.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 
-    // Array of cars
-    const cars = [
-        { image: HK16OMC, fsh: true, badge: "New Brake Pads + Discs", sold: true, price: "£5,995", reg:"HK16 OMC", year: 2016, owners: 4, keys:2, miles:"63,420", make: "Hyundai", model:"i20", transmission: "Manual",fuel:"Petrol", engine:1.2, spec:"Blue Drive SE", link:"https://www.autotrader.co.uk/car-details/202511127836973?fromSavedAds=true&advertising-location=at_cars&sort=relevance&postcode=HA9+8RZ&calc-deposit=500&calc-term=48&calc-mileage=10000&calc-selected-product=HP"}
-    ];
+    import { cars } from '$lib/data/cars';
 
     // Compute the number of columns for md/lg based on number of cars
     let gridColsClass = cars.length === 1 
@@ -41,8 +38,20 @@
             <section class="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-200">
                 <div class="w-full relative">
                     <a href={car.link} target ="_blank">
-                        <img src={car.image} alt="car" class="w-full h-auto object-contain" />
+                        <img
+                            src={car.image}
+                            alt={`${car.year} ${car.make} ${car.model} ${car.spec}`}
+                            class="w-full h-auto object-contain"
+                        />
                     </a>
+                    {#if car.image === awaiting}
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <p class="text-black/70 font-semibold text-sm bg-white/70 px-3 py-1 rounded-xl">
+                                Awaiting Photos
+                            </p>
+                        </div>
+                    {/if}
+
                     {#if car.sold}
                         <span class="absolute top-2 left-2 bg-[#EA5252] text-white text-sm font-bold px-2 py-1 rounded-lg">
                             SOLD
@@ -57,9 +66,11 @@
                         <div class="bg-[#EA5252] rounded-xl px-2 py-1">
                             <p class="text-white text-xs font-semibold">{car.badge}</p>
                         </div>
-                        <a href={car.link} target="_blank" rel="noopener noreferrer" class="ml-auto">
-                            <img src={autotrader} alt="Autotrader" class="h-6 w-auto hover:opacity-80 transition duration-200"/>
-                        </a>
+                        {#if car.link}
+                            <a href={car.link} target="_blank" class="ml-auto shrink-0">
+                                <img src={autotrader} class="h-6" />
+                            </a>
+                        {/if}
                     </div>
                     <div>
                         <p class="text-gray-400 text-sm">{car.engine} {car.spec}</p>
@@ -74,7 +85,7 @@
                             <p>{car.engine} L</p>
                         </div>
                     </div>
-                    <p class="font-bold text-xl line-through">{car.price}</p>
+                    <p class="font-bold text-xl {car.sold ? 'line-through text-gray-400' : ''}">{car.price}</p>
                     <div class="w-full h-[1px] shadow-sm bg-gray-300 my-3"></div>
 
                     <div class="flex flex-wrap gap-x-2 text-gray-700 text-xs pt-1">
@@ -88,6 +99,8 @@
             </section>
         {/each}
     </div>
+
+    
 </section>
 
 <CarInfo/>
