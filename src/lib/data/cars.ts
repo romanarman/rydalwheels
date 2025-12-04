@@ -28,10 +28,10 @@ export const cars: Car[] = [
     {
         image: awaiting,
         fsh: false,
-        badge: "Fresh Service + Brake Pads and Discs",
+        badge: "Fresh Service + Brake Pads and Discs + MOT",
         sold: false,
         price: "£3,995",
-        reg: "GK63FNN",
+        reg: "GK63 FNN",
         year: 2013,
         owners: 3,
         keys: 2,
