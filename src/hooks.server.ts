@@ -1,6 +1,6 @@
 import type { Handle } from '@sveltejs/kit';
 
-const MAINTENANCE = false; // toggle this ON/OFF
+const MAINTENANCE = true; // toggle this ON/OFF
 
 export const handle: Handle = async ({ event, resolve }) => {
   const isMaintenancePage = event.url.pathname === '/maintenance';
