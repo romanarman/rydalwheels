@@ -22,13 +22,14 @@ export interface Car {
 // Import images
 import awaiting from '$lib/assets/cars/ImagesAwaiting.jpg'
 import HK16OMC from '$lib/assets/cars/HK16OMC.jpg';
+import GK63FNN from '$lib/assets/cars/GK63FNN.jpg';
 
 // Export car list
 export const cars: Car[] = [
     {
-        image: awaiting,
+        image: GK63FNN,
         fsh: false,
-        badge: "Fresh Service + Brake Pads and Discs + MOT",
+        badge: "Fresh Service + Brake Pads and Discs",
         sold: false,
         price: "£3,995",
         reg: "GK63 FNN",
@@ -42,7 +43,8 @@ export const cars: Car[] = [
         fuel: "Petrol",
         engine: 1.4,
         spec: "i-VTEC ES Plus",
-        link: ""
+        // link: "",
+        link: "https://www.autotrader.co.uk/car-details/202512118527901"
     },
     {
         image: HK16OMC,

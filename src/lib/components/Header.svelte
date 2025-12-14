@@ -49,7 +49,7 @@
             <!-- <img src={golf} class="w-full max-w-lg h-auto object-contain" alt="Golf" />             -->
             <!-- Heading -->
             <h1 class="font-bold text-6xl sm:text-6xl md:text-7xl lg:text-7xl">
-                <span class="italic">Ryde</span> your car away today
+                Ready to <span class="italic">Ryde</span>
             </h1>
 
             <!-- Tagline -->
