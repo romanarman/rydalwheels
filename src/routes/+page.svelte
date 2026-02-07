@@ -38,11 +38,14 @@
             <section class="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-200">
                 <div class="w-full relative">
                     <a href={car.link} target ="_blank">
-                        <img
-                            src={car.image}
-                            alt={`${car.year} ${car.make} ${car.model} ${car.spec}`}
-                            class="w-full h-auto object-contain"
-                        />
+                        <div class="w-full h-64 bg-gray-100 flex items-center justify-center">
+                            <img
+                                src={car.image}
+                                alt={`${car.year} ${car.make} ${car.model} ${car.spec}`}
+                                class="w-full h-full object-cover"
+                            />
+</div>
+
                     </a>
                     {#if car.image === awaiting}
                         <div class="absolute inset-0 flex items-center justify-center">

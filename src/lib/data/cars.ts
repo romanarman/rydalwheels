@@ -30,7 +30,7 @@ export const cars: Car[] = [
         image: GK63FNN,
         fsh: false,
         badge: "Fresh Service + Brake Pads and Discs",
-        sold: false,
+        sold: true,
         price: "£3,995",
         reg: "GK63 FNN",
         year: 2013,
@@ -43,8 +43,8 @@ export const cars: Car[] = [
         fuel: "Petrol",
         engine: 1.4,
         spec: "i-VTEC ES Plus",
-        // link: "",
-        link: "https://www.autotrader.co.uk/car-details/202512118527901"
+        link: "",
+        // link: "https://www.autotrader.co.uk/car-details/202512118527901"
     },
     {
         image: HK16OMC,
@@ -63,6 +63,7 @@ export const cars: Car[] = [
         fuel: "Petrol",
         engine: 1.2,
         spec: "Blue Drive SE",
-        link: "https://www.autotrader.co.uk/car-details/202511127836973"
+        link: "",
+        // link: "https://www.autotrader.co.uk/car-details/202511127836973"
     }
 ];
