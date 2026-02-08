@@ -3,7 +3,7 @@
     import instagram from "$lib/assets/instagram.svg";
 </script>
 
-<section class="w-full py-20">
+<section id="contactus" class="w-full py-20">
     <div class="max-w-4xl mx-auto text-center px-6">
 
         <!-- Heading -->

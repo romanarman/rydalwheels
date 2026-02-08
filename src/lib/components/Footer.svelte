@@ -3,7 +3,7 @@
   
   const navLinks = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
+    { title: "Stock", href: "#stock" },
   ];
 
   const socialLinks = [

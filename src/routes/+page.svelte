@@ -70,7 +70,9 @@
                             <p class="text-white text-xs font-semibold">{car.badge}</p>
                         </div>
                         {#if car.link}
+                            <!-- svelte-ignore a11y_consider_explicit_label -->
                             <a href={car.link} target="_blank" class="ml-auto shrink-0">
+                                <!-- svelte-ignore a11y_missing_attribute -->
                                 <img src={autotrader} class="h-6" />
                             </a>
                         {/if}

@@ -16,9 +16,10 @@
   <NavHamburger />
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
-    <NavLi>About Us</NavLi>
-    <NavLi>Warranty</NavLi>
-    <NavLi>Location</NavLi>
-    <NavLi>Contact Us</NavLi>
+    <NavLi href="#stock">Stock</NavLi>
+    <NavLi href="https://share.google/KwltlmOj3QaDgnhQp">Reviews</NavLi>
+    <!-- <NavLi>Warranty</NavLi> -->
+    <!-- <NavLi>Location</NavLi> -->
+    <NavLi href="#contactus">Contact Us</NavLi>
   </NavUl>
 </Navbar>
