@@ -21,8 +21,12 @@ export interface Car {
 
 // Import images
 import awaiting from '$lib/assets/cars/ImagesAwaiting.jpg'
-import HK16OMC from '$lib/assets/cars/HK16OMC.jpg';
-import GK63FNN from '$lib/assets/cars/GK63FNN.jpg';
+import HK16OMC from '$lib/assets/cars/HK16OMC.png';
+import GK63FNN from '$lib/assets/cars/GK63FNN.png';
+import GJ71FSF from '$lib/assets/cars/GJ71FSF.png';
+import GL67XAV from '$lib/assets/cars/GL67XAV.png';
+
+
 
 // Export car list
 export const cars: Car[] = [
@@ -65,5 +69,45 @@ export const cars: Car[] = [
         spec: "Blue Drive SE",
         link: "",
         // link: "https://www.autotrader.co.uk/car-details/202511127836973"
-    }
+    },
+    {
+        image: GJ71FSF,
+        fsh: true,
+        badge: "Tesla Warranty",
+        sold: true,
+        price: "£19,995",
+        reg: "GJ71 FSF",
+        year: 2021,
+        owners: 3,
+        keys: 2,
+        miles: "45,000",
+        make: "Tesla",
+        model: "Model 3",
+        transmission: "Automatic",
+        fuel: "Electric",
+        engine: 0,
+        spec: "Long Range",
+        link: "",
+        // link: "https://www.autotrader.co.uk/car-details/202511127836973"
+    },
+    {
+        image: GL67XAV,
+        fsh: true,
+        badge: "Fully Serviced + MOT",
+        sold: true,
+        price: "£12,495",
+        reg: "GL67 XAV",
+        year: 2017,
+        owners: 4,
+        keys: 2,
+        miles: "53,000",
+        make: "Volkswagen",
+        model: "Golf",
+        transmission: "Automatic",
+        fuel: "Petrol",
+        engine: 1.4,
+        spec: "SE Navigation Tsi",
+        link: "",
+        // link: "https://www.autotrader.co.uk/car-details/202511127836973"
+    },
 ];
