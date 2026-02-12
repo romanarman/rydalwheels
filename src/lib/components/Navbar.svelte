@@ -11,7 +11,7 @@
 
 <Navbar class="bg-white/80 backdrop-blur-md border-b border-black/5">  
   <NavBrand href="/" class="flex-1 justify-center md:justify-start">
-    <img src={logo} class="h-12 sm:h-12" alt="Rydal Wheels Logo" />
+    <img src={logo} class="h-12 sm:h-12" alt="Rydal Wheels" />
   </NavBrand>
   <NavHamburger />
   <NavUl {activeUrl}>
