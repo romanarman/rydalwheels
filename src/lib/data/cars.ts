@@ -31,6 +31,26 @@ import GL67XAV from '$lib/assets/cars/GL67XAV.png';
 // Export car list
 export const cars: Car[] = [
     {
+        image: WF57SKX,
+        fsh: false,
+        badge: "Fresh Service",
+        sold: true,
+        price: "£1,995",
+        reg: "WF57 SKX",
+        year: 2007,
+        owners: 4,
+        keys: 2,
+        miles: "152,000",
+        make: "Mercedes",
+        model: "Benz",
+        transmission: "Automatic",
+        fuel: "Diesel",
+        engine: 3.0,
+        spec: "GL320",
+        link: "",
+        // link: "https://www.autotrader.co.uk/car-details/202512118527901"
+    },
+    {
         image: GK63FNN,
         fsh: false,
         badge: "Fresh Service + Brake Pads and Discs",
