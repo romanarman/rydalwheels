@@ -25,6 +25,8 @@ import HK16OMC from '$lib/assets/cars/HK16OMC.png';
 import GK63FNN from '$lib/assets/cars/GK63FNN.png';
 import GJ71FSF from '$lib/assets/cars/GJ71FSF.png';
 import GL67XAV from '$lib/assets/cars/GL67XAV.png';
+import WF57SKX from '$lib/assets/cars/WF57SKX.png';
+
 
 
 
